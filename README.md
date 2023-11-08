@@ -1,4 +1,4 @@
-Just a Sidebuild Tool (Jast) - (WARNING: Strongly in development stage :)
+Just a simple Site build helper - (WARNING: Strongly in development stage :)
 
 # What's this ?
 
