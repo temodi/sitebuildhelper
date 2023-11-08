@@ -1,0 +1,21 @@
+.pt-5 {
+  padding-top: 3rem !important;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+::placeholder {
+  color: gray;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background-color: lightblue;
+}
+
+img {
+  border: 1px solid black;
+}
