@@ -15,7 +15,6 @@ buildParams();
 
 const DEFAULT_BASE_DIR = "./sites/**/";
 const site = getParamValue("site");
-console.log('site', site);
 const BASE_SOURCE_DIR = site ? `./sites/${site}/**/` : DEFAULT_BASE_DIR;
 const DEFAULT_BUILD_DIR = "./builds/sites";
 const BUILD_DIR = site ?  `${DEFAULT_BUILD_DIR}/${site}` : DEFAULT_BUILD_DIR;
@@ -61,15 +60,12 @@ function watchFiles() {
   gulpWatch(FILES_FOR_COPY, parallel(/* transpilePostCSS, */ transpileSassToCSS, copyHtml));
 }
 
+// TOOD: in progress
 function cloneFramework() {
-  // kell melyik site-ba
   // $ yarn run gulp clone --site:mainsite --fw:tailwind
-  // kell melyik framework
-
   console.log(getParamValue("site"));
   console.log(getParamValue("fw"));
   console.log(getParamValue("nonexists"));
-
   // return src(`./frameworks/${getCommandValue('fw')}/**/*`).pipe(
   //   dest(`${BASE_SOURCE_DIR}${getCommandValue('site')}/`)
   // );
